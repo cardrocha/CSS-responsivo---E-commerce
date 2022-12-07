@@ -1,0 +1,204 @@
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(252, 206, 138);
+}
+
+header {
+    background-color: rgb(255, 155, 5);
+    padding: 16px;
+}
+
+.container,
+section .produto {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(252, 252, 252);
+    font-size: 36px;
+    font-style: italic;
+}
+
+header .container, 
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline;
+    margin-left: 16px;
+}
+
+nav li a {
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+img {
+    height: 300px;
+}
+
+section {
+    padding: 24px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+section img {
+    margin-right: 32px;
+}
+
+hr {
+    margin-bottom: 32px;
+    height: 2px;
+    background-color: rgb(255, 155, 5);
+    border: none;
+}
+
+.produto > hr .container .container {
+    margin-bottom: 32px;
+}
+
+section .container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1024px;
+    grid-gap: 20px;
+}
+
+section .container ul li {
+    list-style: none;
+}
+
+section .produto .container img {
+    height: 250px;
+    width: 100%;
+}
+
+section .produto {
+    margin-top: 120px;
+}
+
+button {
+    width: 100%;
+    background-color: darkorange;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(252, 169, 67);
+}
+
+@media screen and (max-width: 767px) {
+
+    h1 {
+        text-align: center;
+    }
+
+.container,
+section .produto {
+    max-width: 767px;
+    width: 100%;
+}
+
+section .container img {
+    width: 100%;
+    height: 100%;
+}
+
+section .produto .container img {
+    width: 100%;
+    height: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    display: block;
+    align-items: center;
+}
+
+section .container ul {
+    display: block;
+}
+
+section .container ul li{
+    margin-top: 10px;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1027px) {
+    .container,
+    section .produtos .container {
+    max-width: 768px;
+    width: 80%;
+}
+
+section .container img {
+    width: 100%;
+    height: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    display: block;
+    
+}
+
+section .container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    max-width: 768px;
+    grid-gap: 10px;
+}
+
+section .container ul li {
+    margin-top: 10px;
+}
+
+section .produto .container {
+    width: 100%;
+}
+
+h3, p {
+    font-size: 26px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+
+}
